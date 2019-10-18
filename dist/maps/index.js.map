@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.ts"],"names":["message","document","getElementsByClassName","innerHTML"],"mappings":"AAAA,GAAIA,SAAiB,aACrBC,UAASC,uBAAuB,aAAa,GAAGC,UAAYH","file":"index.js","sourcesContent":["var message:string = \"Hello World\";\r\ndocument.getElementsByClassName(\"customBox\")[0].innerHTML = message;"],"sourceRoot":"/source/"}

@@ -1,0 +1,31 @@
+extends ../includes/layout
+include ../includes/jumbotron
+include ../includes/youtubeEmbed
+
+prepend pageStyles
+  - var pageTitle = "Speedrunning"
+
+append pageContent
+  +jumbotron
+    h1(class="display-4") Speedrunning
+    p(class="lead") Check out some real time speedruns from TiKevin83
+  +jumbotron
+    h2(class="display-4") Pokemon Speedruns
+    hr(class="my-4")
+    h3 Pokemon Yellow
+    p Formerly top 3 speedrun of Pokemon Yellow in 1:56:22, has been heavily contested since
+    +embed16x9("M0kVe9J3mt0")
+    hr(class="my-4")
+    h3 Pokemon Red
+    p Not a particularly great time for Red but was really good as a race PB for the time
+    +embed16x9("VVCFvY1wTOw")
+  +jumbotron
+    h3(class="display-4") Backyard Baseball
+    p(class="lead") Formerly World Record speedrun of Backyard Baseball
+    +embed16x9("qB2j6sAqGws")
+
+append pageScripts
+  script(src="https://cdn.jsdelivr.net/npm/lozad")
+  script.
+    const observer = lozad();
+    observer.observe();

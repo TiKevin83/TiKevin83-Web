@@ -1,0 +1,1 @@
+{"version":3,"sources":["lozad.ts"],"names":["lozad_1","require","observer","observe"],"mappings":"kCAAA,IAAAA,SAAAC,QAAA,SAEMC,SAAWF,QAAA,SACjBE,UAASC","file":"lozad.js","sourcesContent":["import lozad from \"lozad\";\r\n\r\nconst observer = lozad();\r\nobserver.observe();"],"sourceRoot":"/source/"}
